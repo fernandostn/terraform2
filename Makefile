@@ -1,7 +1,7 @@
 # import env config
 cnf ?= .env
 include $(cnf)
-export $(shell sed 's/-.*//' $(cnf))
+export $(shell sed 's/=.*//' $(cnf))
 
 # variables definitions
 TERRAFORM_VERSION=light
