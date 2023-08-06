@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
 
 terraform {
@@ -7,8 +7,8 @@ terraform {
     # Lembre de trocar o bucket para o seu, não pode ser o mesmo nome
     bucket = "terraform-fernandostn"
     #dynamodb_table = "terraform-state-lock-dynamo"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    key     = "terraform.tfstate"
+    region  = "us-east-1"
     encrypt = true
   }
 }

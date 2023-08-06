@@ -9,6 +9,19 @@ variable "image_id" {
   }
 }
 
-/*variable "servers" {
+# variável definida para receber os inputs do módulo raiz
+variable "servers" {
 
-}*/
+}
+
+variable "environment" {
+  type        = string
+  default     = "staging"
+  description = "O ambiente da instância"
+}
+
+variable "instance_type" {
+  type        = list(string)
+  default     = ["t2.micro","t3.medium"]
+  description = "The list of instance type" 
+}
