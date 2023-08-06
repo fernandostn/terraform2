@@ -25,3 +25,18 @@ variable "instance_type" {
   default     = ["t2.micro","t3.medium"]
   description = "The list of instance type" 
 }
+
+/*variable "blocks" {
+  type = list(object({
+    device_name = string
+    volume_size = string
+    volume_type = string
+  }))
+  description = "List of EBS Block"
+}*/
+
+variable "name" {
+  type    = string
+  default = "Tomás"
+  description = "Nome do HelloWorld"
+}
